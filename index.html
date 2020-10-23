@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<link href="/favicon.ico?" rel="icon" type="image/x-icon" />
+	<link href="/favicon.ico?" rel="shortcut icon" type="image/x-icon" />
+	<title>Your Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:800i" rel="stylesheet">
+	<style type="text/css">
+		body {background-color: #669999;font-family:'Open Sans',sans-serif;font-size:48px;}
+		#outer {width:90%; margin: 0 auto;}
+		.inputButton{
+			font-family:'Open Sans',sans-serif;
+		    font-size:32px;
+			margin:10px;
+			background: #1e90ff;
+			border:1px solid #1e90ff;
+			-webkit-appearance: none;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			outline: none;
+			padding: 8px 15px 8px 15px;
+			border: none;
+			color: #fff;
+		}
+		.inputButton:hover{
+			background: #1B81E5;
+			-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			box-shadow: 0 0 1px rgba(0,0,0, .75);
+		}
+		.button{
+		    font-family:'Open Sans',sans-serif;
+		    font-size:32px;
+			margin:10px;
+			background: #1e90ff;
+			border:1px solid #1e90ff;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			outline: none;
+			padding: 8px 15px 8px 15px;
+			border: none;
+			color: #fff;
+		}
+		.button:hover{
+			background: #1B81E5;
+			-webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+			box-shadow: 0 0 1px rgba(0,0,0, .75);
+		}
+		.codeTextClass{
+			font-family:'Open Sans',sans-serif;
+		    font-size:32px;
+			margin:10px;
+			background: #fff;
+			border:1px solid #1e90ff;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+			box-shadow: 0 0 4px rgba(0,0,0, .75);
+			outline: none;
+			padding: 8px 15px 8px 15px;
+			border: none;
+			color: black;
+		}		
+		@media screen and (-webkit-min-device-pixel-ratio:0) { 
+			select,
+			textarea,
+			input,
+			input:focus,
+			input:hover {
+				font-size: 32px !important;
+			}
+		}
+		#textOutput{
+			width:100%;
+			margin-top:30px;
+			margin-bottom:30px;
+			display:block;
+			text-align:left;
+			font-size: 24px;
+			background-color:white;
+			border: 1px solid #767676;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+		}
+		.pOutput{
+			padding:2px 10px 2px 10px;
+			white-space: normal;
+		}
+		.form-style li {
+			padding: 0;
+			display: block;
+			list-style: none;
+			margin: 10px 0 0 0;
+		}
+		.form-style label{
+			margin:0 0 3px 0;
+			padding:0px;
+			display:block;
+			font-weight: bold;
+		}
+	</style>
+	<meta charset="UTF-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script>	
+		var xButton = 0;
+		var text_0 = "Welcome to your game.</br></br>Your clues are encrypted and will require codewords to decipher the actual messages. Each clue provides hints for the subsequent codeword.</br></br>To get you started, click on <strong>Clue One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first message.";
+		var text_1 = "Gxq!t#zw*\\hgl*Rlz\"*Wdrt8/Wnm|t# w /zotv/iovn/d&us}lg| \"h&tsqugz$/znqmw#iwx$dov}/d&jy~n& o/eu|r/kg|os1&_o{o&|rpw-{*~qk(~wlto*'h-~o/ju|8";
+		var text_2 = "Xjz$ylq$i){k\"p)gq#i)mp5ljrf/$uevzv5$d+x)}q+$!sp<x)fg5ekpg5xx$w$pxgm5m}$w$xrp\"*ln$v~qn$k)${mi}x7$[%y)spxi)wc~h)}q+$!sw\"h)lc,i)gn~qkif5xqi\"-e}it5xx{g($jx\"bijh\"eswhu5mo${%y){g(i)e\"*inrc|i{2\"^x0w\"*mvi\"*s)kg*$#sw*loynC$Msp<x){q(v#0\"/s~$f%r0x\"}e i\"*s)kq5xx$v}i)xq&2";
+		var text_3 = "bw)z3$kyj|'i5gu(w*&v%k#h|'iC&W+k,k3-q5z{}\"|g!}\")z#+g5u\"8J%|x+\"-n|{j5o'8pz~(8v%&Wy{\"oz!v5J#'w*yA8V}k3'g.z3{qyk+(ty&|,\"*nx8h~x'-pvsx8q{&(!g5vx+u%t3-jvz3{q#k'8v%&-(wC";
+		var text_4 = "\\q jyw!n)%(jy{/i|f#)$%'e'g'%)r4vwj3q'ftwA\"dt~hxgx\"$t3U*p#j(\"{q{k3e$w\"xx\"$hu%#h45\"i3u)ttj(\",jtwx\".q%w3v|ttj'q\"g/n'\"(g$%(q4i~%tv4:I:E04Ttlttxntx'\"$h/|{c)\"wf$ryp#13{$w/r)u)\"un\"k(j/f\"f4ntf*g4d)%D3N3D&3G(uts(kun#%tty\"xs3v|g/y&w#m/f\"f4{~z&\"%c\"y\"g'u/||n!\"zs#y4vwj3pyz$%vqxg't&fB\"Xy:u4w %(q4{~z3kz\")t)\",c}y3v$\"#mtty\"$mx\"xq}z(u4yxy{\".q%w3rut$~A";
+		var text_5 = "h |y$(u&\"y#p-23_u%'6p%t#ot$\"{})$|y&p)6@E>F64/[&/)s3<9?4Y~zj!gt/g+=4W)ozt4X=4E'q&u$)/glt rpB6X)+'&g{'{px}3vgxx6u$v?&h%)6$uox&y~\"{/we'n&x#6ruwx& ~*6'ur(&z~4+x%23_u%'6}y|(&i~x{'$vw&}x!#/\"ixz&)$,/ux378IGF=";
+		var text_6 = "a |i)\"&/ij\"D/Sw-$pmw-*$vnr+;$kr+'in{6Dxq-w}h)C+w$|\")ti}!B/e{r6#i r)pp)}#pgn!6ry{ {}xu'6#i{$ }k)s&~h7-fxgt-&}i7-_}$ony$0)\"~t$o##{$wn$t$xs6~rn-&u$}u{#i)}#pgn!6xw)'&%v){{(x)p&si!|)s2)f&%$vn0/{j{+/xx-+pon-0~y{-&{h)}~~rn-.xxq-0~y7";
+		var text_7 = "Wnz+uu#5J}n3q~x5I}n3$%'zz}y3y$4v5vo\"yq)+(n& yr'v(#43i *<\"u&yy~x5/x{&0~y.*)i &u4)*~i~0y#)~mkA0gu*xq&#&%4{%{&v ~(*(~i(y #C";		
+		var text_8 = "^%?y-*y&k-* 8{{\" {q-/ .x-%||&}} 'k;5d!k-&q,y%%#|&pv~8hr5$(r$zt8h'5w(o{|0-u-*x}&y%~ s|$%8rvw#yx'C0at-*x}&p}y%j z~?y-&y{z#(u8h|%{8yrx%\"u{5%!k z0\"y-v0zu|!0yh|+%8yr.&yr-(u)x|y&{zv%~F&a}u8g#*x(x4)0'gzz0,zn(%,&%~%!&ZXSF&T%0-u-&q k-FHF";
+		var text_9 = "i!{)00*&):#{\"&#{#6+x&)u6{~z:w&:%&:w${y#H0o*&6.x&0|z:~&/yy 0w:~{20}(q '0|*|z #D:d~$$6! #~u)A$6)q$ 0 .00*&):~{3%6} z (&-t6{~z:s&)%w$~*:q%:u${y#:%~{%6(q0:r{:&* v,'0|*#64 ,-0% )+:qy/y-$%0H";
+		var text_10 = "j 'v0!~(yv$$(p$%%$q(/DJD40t}u0&lu3\"v$vv't$z  $y'/w $$r#$y0!j0-~'>1Ev(t$(rvt';1%vp|3)!&$$v&xv~u$%#/%s$e}3p t1vu(%$~1l !t?0Zj0-~'0 iuw/& 1{q'$v0%s}x/&y~i<3)!&1g ){u0&v*3#y \"ty\"v=0$iqwx w1e0u~!{=$! p+y k0$~!|=$u\"vrwv$y\"/t  zu&#r%zs~?/!#1w%t\"&0r$s){&>";
+		var text_11 = "Jr!|lw$r-\"\"uwu0yot,nwc\"&yd$7GDf\\X\"I\\GUQ^K07Z{gzk)v0+zk$r3qvk\"p *k\"gGVMIMG#||lv7l#t( qx0,u\"'vxp6";
+		
+		var cur_text_1 = "Gxq!t#zw* hgl*Rlz\"*Wdrt8/Wnm t# w /zotv/iovn/d&us lg  \"h&tsqugz$/znqmw#iwx$dov /d&jy n& o/eu r/kg os1& o o& rpw- * qk( wlto*'h- o/ju 8";
+		var cur_text_2 = "Xjz$ylq$i) k\"p)gq#i)mp5ljrf/$uevzv5$d+x) q+$!sp x)fg5ekpg5xx$w$pxgm5m $w$xrp\"*ln$v qn$k)$ mi x7$ %y)spxi)wc h) q+$!sw\"h)lc,i)gn qkif5xqi\"-e it5xx g($jx\"bijh\"eswhu5mo$ %y) g(i)e\"*inrc i 2\" x0w\"*mvi\"*s)kg*$#sw*loynC$Msp x) q(v#0\"/s $f%r0x\" e i\"*s)kq5xx$v i)xq&2";
+		var cur_text_3 = "bw)z3$kyj 'i5gu(w*&v%k#h 'iC&W+k,k3-q5z  \" g! \")z#+g5u\"8J% x+\"-n  j5o'8pz (8v%&Wy \"oz!v5J#'w*yA8V k3'g.z3 qyk+(ty& ,\"*nx8h x'-pvsx8q &(!g5vx+u%t3-jvz3 q#k'8v%&-(wC";
+		var cur_text_4 = " q jyw!n)%(jy /i f#)$%'e'g'%)r4vwj3q'ftwA\"dt hxgx\"$t3U*p#j(\" q k3e$w\"xx\"$hu%#h45\"i3u)ttj(\",jtwx\".q%w3v ttj'q\"g/n'\"(g$%(q4i %tv4:I:E04Ttlttxntx'\"$h/  c)\"wf$ryp#13 $w/r)u)\"un\"k(j/f\"f4ntf*g4d)%D3N3D&3G(uts(kun#%tty\"xs3v g/y&w#m/f\"f4  z&\"%c\"y\"g'u/  n!\"zs#y4vwj3pyz$%vqxg't&fB\"Xy:u4w %(q4  z3kz\")t)\",c y3v$\"#mtty\"$mx\"xq z(u4yxy \".q%w3rut$ A";
+		var cur_text_5 = "h  y$(u&\"y#p-23 u%'6p%t#ot$\"  )$ y&p)6@E F64/ &/)s3 9?4Y zj!gt/g+=4W)ozt4X=4E'q&u$)/glt rpB6X)+'&g ' px 3vgxx6u$v?&h%)6$uox&y \" /we'n&x#6ruwx&  *6'ur(&z 4+x%23 u%'6 y (&i x '$vw& x!#/\"ixz&)$,/ux378IGF=";
+		var cur_text_6 = "a  i)\"&/ij\"D/Sw-$pmw-*$vnr+;$kr+'in 6Dxq-w h)C+w$ \")ti !B/e r6#i r)pp) #pgn!6ry    xu'6#i $  k)s& h7-fxgt-& i7-  $ony$0)\" t$o## $wn$t$xs6 rn-&u$ u #i) #pgn!6xw)'&%v)  (x)p&si! )s2)f&%$vn0/ j +/xx-+pon-0 y -& h)   rn-.xxq-0 y7";
+		var cur_text_7 = "Wnz+uu#5J n3q x5I n3$%'zz y3y$4v5vo\"yq)+(n& yr'v(#43i * \"u&yy x5/x &0 y.*)i &u4)* i 0y#) mkA0gu*xq&#&%4 % &v  (*( i(y #C";
+		var cur_text_8 = " %?y-*y&k-* 8  \"  q-/ .x-%  &   'k;5d!k-&q,y%%# &pv 8hr5$(r$zt8h'5w(o  0-u-*x &y%  s $%8rvw#yx'C0at-*x &p y%j z ?y-&y z#(u8h % 8yrx%\"u 5%!k z0\"y-v0zu !0yh +%8yr.&yr-(u)x y& zv% F&a u8g#*x(x4)0'gzz0,zn(%,&% %!&ZXSF&T%0-u-&q k-FHF";
+		var cur_text_9 = "i! )00*&):# \"&# #6+x&)u6  z:w&:%&:w$ y#H0o*&6.x&0 z: &/yy 0w:  20 (q '0 * z #D:d $$6! # u)A$6)q$ 0 .00*&):  3%6  z (&-t6  z:s&)%w$ *:q%:u$ y#:%  %6(q0:r :&* v,'0 *#64 ,-0% )+:qy/y-$%0H";
+		var cur_text_10 = "j 'v0! (yv$$(p$%%$q(/DJD40t u0&lu3\"v$vv't$z  $y'/w $$r#$y0!j0- ' 1Ev(t$(rvt';1%vp 3)!&$$v&xv u$%#/%s$e 3p t1vu(%$ 1l !t?0Zj0- '0 iuw/& 1 q'$v0%s x/&y i 3)!&1g ) u0&v*3#y \"ty\"v=0$iqwx w1e0u ! =$! p+y k0$ ! =$u\"vrwv$y\"/t  zu&#r%zs ?/!#1w%t\"&0r$s) & ";
+		var cur_text_11 = "Jr! lw$r-\"\"uwu0yot,nwc\"&yd$7GDf X\"I GUQ K07Z gzk)v0+zk$r3qvk\"p *k\"gGVMIMG#  lv7l#t( qx0,u\"'vxp6";
+	
+		function changeText(value) {
+			document.getElementById('clue'+xButton).setAttribute('style', 'background: #1e90ff');
+			document.getElementById('clue'+value).setAttribute('style', 'background: red');
+			if(value == "0"){document.getElementById("ptext").innerHTML = text_0;}
+			if(value == "1"){document.getElementById("ptext").innerHTML = cur_text_1;}
+			if(value == "2"){document.getElementById("ptext").innerHTML = cur_text_2;}
+			if(value == "3"){document.getElementById("ptext").innerHTML = cur_text_3;}
+			if(value == "4"){document.getElementById("ptext").innerHTML = cur_text_4;}
+			if(value == "5"){document.getElementById("ptext").innerHTML = cur_text_5;}
+			if(value == "6"){document.getElementById("ptext").innerHTML = cur_text_6;}
+			if(value == "7"){document.getElementById("ptext").innerHTML = cur_text_7;}
+			if(value == "8"){document.getElementById("ptext").innerHTML = cur_text_8;}
+			if(value == "9"){document.getElementById("ptext").innerHTML = cur_text_9;}
+			if(value == "10"){document.getElementById("ptext").innerHTML = cur_text_10;}
+			if(value == "11"){document.getElementById("ptext").innerHTML = cur_text_11;}
+			xButton = value;
+		};	
+		
+		function text2ascii(obj){
+			var convertedObj = new Array(obj.length);
+			convertedObj[0] = obj.charCodeAt(0);
+			for(i = 1; i < obj.length; i++){ 
+				var asciiChar = obj.charCodeAt(i);
+				convertedObj[i] = asciiChar;
+			} 
+			return convertedObj;
+		}
+		
+		function ascii2text(my_array){
+			var new_string = "";
+			for(i = 0; i < my_array.length; i++){ 
+				var asciiChar = String.fromCharCode(my_array[i]);
+				new_string += "" + asciiChar;
+			} 
+			return new_string;
+		}
+		
+		function decode_array(message_array, codeword_array){
+			var my_message = new Array(message_array.length);
+			var tmp;
+			for( i = 0; i < message_array.length; i++){
+				tmp = (i+1) % codeword_array.length;
+				if(tmp == 0){tmp = codeword_array.length;}	
+				 my_message[i] = (message_array[i] - codeword_array[tmp - 1] - 32) % 95 + 32;
+				 if(my_message[i] != 32){my_message[i] = my_message[i] + 95;}
+				 if(my_message[i] > 122){my_message[i] = 32}
+				 if(my_message[i] > 90 & my_message[i] < 97){my_message[i] = 32}
+				 if(my_message[i] == 60 | my_message[i] == 62){my_message[i] = 32}
+			}
+			return(my_message)
+		}
+		
+		function decoder() {
+			var userword = document.getElementById("codeText").value.replace(/\s/g,'');
+			userword = userword.toLowerCase();
+			var num_userword = text2ascii(userword);
+			if(xButton != 0 & userword != ""){
+				var my_cur_message = text2ascii(window["text_" + xButton]);
+				var my_text = decode_array(my_cur_message, num_userword);
+				my_text = ascii2text(my_text);
+				window["cur_text_" + xButton] = my_text;
+				document.getElementById("ptext").innerHTML = my_text;
+				$("#ptext").hide();
+				$("#ptext").fadeIn(1000);
+			}
+			document.getElementById("codeText").value = "";
+		};
+		
+	</script>
+</head>
+<body>
+	<div id=outer>
+		<p style="font-size:48px;text-align:center;margin-top:100px;color:white;">Your Clues</p>
+		<div style="text-align:center;">
+			<button class="button" value = "0" id = "clue0" style="background:red;" onclick="changeText(this.value);"/>Info</button>
+			<button class="button" value = "1" id = "clue1" onclick="changeText(this.value);"/>Clue One</button> 
+			<button class="button" value = "2" id = "clue2" onclick="changeText(this.value);"/>Clue Two</button>
+			<button class="button" value = "3" id = "clue3" onclick="changeText(this.value);"/>Clue Three</button>
+			<button class="button" value = "4" id = "clue4" onclick="changeText(this.value);"/>Clue Four</button> 
+			<button class="button" value = "5" id = "clue5" onclick="changeText(this.value);"/>Clue Five</button>
+			<button class="button" value = "6" id = "clue6" onclick="changeText(this.value);"/>Clue Six</button>
+			<button class="button" value = "7" id = "clue7" onclick="changeText(this.value);"/>Clue Seven</button> 
+			<button class="button" value = "8" id = "clue8" onclick="changeText(this.value);"/>Clue Eight</button>
+			<button class="button" value = "9" id = "clue9" onclick="changeText(this.value);"/>Clue Nine</button>
+			<button class="button" value = "10" id = "clue10" onclick="changeText(this.value);"/>Clue Ten</button> 
+			<button class="button" value = "11" id = "clue11" onclick="changeText(this.value);"/>Clue Eleven</button>
+		<div>
+		<div style="margin: auto;width: 100%;">
+			<div id="textOutput">
+				<p class="pOutput" id="ptext">Welcome to your game.</br></br>Your clues are encrypted and will require codewords to decipher the actual messages. Each clue provides hints for the subsequent codeword.</br></br>To get you started, click on <strong>Clue One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first message.</p>
+			</div>
+			<div style="width:100%;">
+				<form name="clue-form" onsubmit="return false">
+				<ul class="form-style">
+				        <li class="form-style">
+							<label class="form-style" style="font-size:48px;color:white;">Enter Codeword</label>
+							<input class="inputButton" id = "decode" type="submit" value="Decode" onclick="decoder()" />
+							<input type="text" id="codeText" class = "codeTextClass" name="code" maxlength="15" autocomplete="off" style="width:50%;text-align:center;" placeholder="Enter Code" />
+						</li>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
