@@ -134,7 +134,7 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script>	
 		var xButton = 0;
-		var text_0 = "Welcome to your game.</br></br>Your clues are encrypted and will require codewords to decipher the actual messages. Each clue provides hints for the subsequent codeword.</br></br>To get you started, click on <strong>Clue One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first message.";
+		var text_0 = "Welcome to Know Your Aliases!</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate, use their alias to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first fun-fact.";
 		var text_1 = "Gxq!t#zw*\\hgl*Rlz\"*Wdrt8/Wnm|t# w /zotv/iovn/d&us}lg| \"h&tsqugz$/znqmw#iwx$dov}/d&jy~n& o/eu|r/kg|os1&_o{o&|rpw-{*~qk(~wlto*'h-~o/ju|8";
 		var text_2 = "Xjz$ylq$i){k\"p)gq#i)mp5ljrf/$uevzv5$d+x)}q+$!sp<x)fg5ekpg5xx$w$pxgm5m}$w$xrp\"*ln$v~qn$k)${mi}x7$[%y)spxi)wc~h)}q+$!sw\"h)lc,i)gn~qkif5xqi\"-e}it5xx{g($jx\"bijh\"eswhu5mo${%y){g(i)e\"*inrc|i{2\"^x0w\"*mvi\"*s)kg*$#sw*loynC$Msp<x){q(v#0\"/s~$f%r0x\"}e i\"*s)kq5xx$v}i)xq&2";
 		var text_3 = "bw)z3$kyj|'i5gu(w*&v%k#h|'iC&W+k,k3-q5z{}\"|g!}\")z#+g5u\"8J%|x+\"-n|{j5o'8pz~(8v%&Wy{\"oz!v5J#'w*yA8V}k3'g.z3{qyk+(ty&|,\"*nx8h~x'-pvsx8q{&(!g5vx+u%t3-jvz3{q#k'8v%&-(wC";
@@ -231,24 +231,24 @@
 </head>
 <body>
 	<div id=outer>
-		<p style="font-size:48px;text-align:center;margin-top:100px;color:white;">Your Clues</p>
+		<p style="font-size:48px;text-align:center;margin-top:100px;color:white;">Fun Facts</p>
 		<div style="text-align:center;">
 			<button class="button" value = "0" id = "clue0" style="background:red;" onclick="changeText(this.value);"/>Info</button>
-			<button class="button" value = "1" id = "clue1" onclick="changeText(this.value);"/>Clue One</button> 
-			<button class="button" value = "2" id = "clue2" onclick="changeText(this.value);"/>Clue Two</button>
-			<button class="button" value = "3" id = "clue3" onclick="changeText(this.value);"/>Clue Three</button>
-			<button class="button" value = "4" id = "clue4" onclick="changeText(this.value);"/>Clue Four</button> 
-			<button class="button" value = "5" id = "clue5" onclick="changeText(this.value);"/>Clue Five</button>
-			<button class="button" value = "6" id = "clue6" onclick="changeText(this.value);"/>Clue Six</button>
-			<button class="button" value = "7" id = "clue7" onclick="changeText(this.value);"/>Clue Seven</button> 
-			<button class="button" value = "8" id = "clue8" onclick="changeText(this.value);"/>Clue Eight</button>
-			<button class="button" value = "9" id = "clue9" onclick="changeText(this.value);"/>Clue Nine</button>
-			<button class="button" value = "10" id = "clue10" onclick="changeText(this.value);"/>Clue Ten</button> 
-			<button class="button" value = "11" id = "clue11" onclick="changeText(this.value);"/>Clue Eleven</button>
+			<button class="button" value = "1" id = "clue1" onclick="changeText(this.value);"/>Fact One</button> 
+			<button class="button" value = "2" id = "clue2" onclick="changeText(this.value);"/>Fact Two</button>
+			<button class="button" value = "3" id = "clue3" onclick="changeText(this.value);"/>Fact Three</button>
+			<button class="button" value = "4" id = "clue4" onclick="changeText(this.value);"/>Fact Four</button> 
+			<button class="button" value = "5" id = "clue5" onclick="changeText(this.value);"/>Fact Five</button>
+			<button class="button" value = "6" id = "clue6" onclick="changeText(this.value);"/>Fact Six</button>
+			<button class="button" value = "7" id = "clue7" onclick="changeText(this.value);"/>Fact Seven</button> 
+			<button class="button" value = "8" id = "clue8" onclick="changeText(this.value);"/>Fact Eight</button>
+			<button class="button" value = "9" id = "clue9" onclick="changeText(this.value);"/>Fact Nine</button>
+			<button class="button" value = "10" id = "clue10" onclick="changeText(this.value);"/>Fact Ten</button> 
+			<button class="button" value = "11" id = "clue11" onclick="changeText(this.value);"/>Fact Eleven</button>
 		<div>
 		<div style="margin: auto;width: 100%;">
 			<div id="textOutput">
-				<p class="pOutput" id="ptext">Welcome to Know Your Aliases.</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate alias, use it to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first message.</p>
+				<p class="pOutput" id="ptext">Welcome to Know Your Aliases!</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate, use their alias to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first fun-fact.</p>
 			</div>
 			<div style="width:100%;">
 				<form name="clue-form" onsubmit="return false">
