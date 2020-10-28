@@ -134,30 +134,28 @@
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<script>	
 		var xButton = 0;
-		var text_0 = "Welcome to Know Your Aliases!</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate, use their alias to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first fun-fact.";
-		var text_1 = "Gxq!t#zw*\\hgl*Rlz\"*Wdrt8/Wnm|t# w /zotv/iovn/d&us}lg| \"h&tsqugz$/znqmw#iwx$dov}/d&jy~n& o/eu|r/kg|os1&_o{o&|rpw-{*~qk(~wlto*'h-~o/ju|8";
-		var text_2 = "Xjz$ylq$i){k\"p)gq#i)mp5ljrf/$uevzv5$d+x)}q+$!sp<x)fg5ekpg5xx$w$pxgm5m}$w$xrp\"*ln$v~qn$k)${mi}x7$[%y)spxi)wc~h)}q+$!sw\"h)lc,i)gn~qkif5xqi\"-e}it5xx{g($jx\"bijh\"eswhu5mo${%y){g(i)e\"*inrc|i{2\"^x0w\"*mvi\"*s)kg*$#sw*loynC$Msp<x){q(v#0\"/s~$f%r0x\"}e i\"*s)kq5xx$v}i)xq&2";
-		var text_3 = "bw)z3$kyj|'i5gu(w*&v%k#h|'iC&W+k,k3-q5z{}\"|g!}\")z#+g5u\"8J%|x+\"-n|{j5o'8pz~(8v%&Wy{\"oz!v5J#'w*yA8V}k3'g.z3{qyk+(ty&|,\"*nx8h~x'-pvsx8q{&(!g5vx+u%t3-jvz3{q#k'8v%&-(wC";
-		var text_4 = "\\q jyw!n)%(jy{/i|f#)$%'e'g'%)r4vwj3q'ftwA\"dt~hxgx\"$t3U*p#j(\"{q{k3e$w\"xx\"$hu%#h45\"i3u)ttj(\",jtwx\".q%w3v|ttj'q\"g/n'\"(g$%(q4i~%tv4:I:E04Ttlttxntx'\"$h/|{c)\"wf$ryp#13{$w/r)u)\"un\"k(j/f\"f4ntf*g4d)%D3N3D&3G(uts(kun#%tty\"xs3v|g/y&w#m/f\"f4{~z&\"%c\"y\"g'u/||n!\"zs#y4vwj3pyz$%vqxg't&fB\"Xy:u4w %(q4{~z3kz\")t)\",c}y3v$\"#mtty\"$mx\"xq}z(u4yxy{\".q%w3rut$~A";
-		var text_5 = "h |y$(u&\"y#p-23_u%'6p%t#ot$\"{})$|y&p)6@E>F64/[&/)s3<9?4Y~zj!gt/g+=4W)ozt4X=4E'q&u$)/glt rpB6X)+'&g{'{px}3vgxx6u$v?&h%)6$uox&y~\"{/we'n&x#6ruwx& ~*6'ur(&z~4+x%23_u%'6}y|(&i~x{'$vw&}x!#/\"ixz&)$,/ux378IGF=";
-		var text_6 = "a |i)\"&/ij\"D/Sw-$pmw-*$vnr+;$kr+'in{6Dxq-w}h)C+w$|\")ti}!B/e{r6#i r)pp)}#pgn!6ry{ {}xu'6#i{$ }k)s&~h7-fxgt-&}i7-_}$ony$0)\"~t$o##{$wn$t$xs6~rn-&u$}u{#i)}#pgn!6xw)'&%v){{(x)p&si!|)s2)f&%$vn0/{j{+/xx-+pon-0~y{-&{h)}~~rn-.xxq-0~y7";
-		var text_7 = "Wnz+uu#5J}n3q~x5I}n3$%'zz}y3y$4v5vo\"yq)+(n& yr'v(#43i *<\"u&yy~x5/x{&0~y.*)i &u4)*~i~0y#)~mkA0gu*xq&#&%4{%{&v ~(*(~i(y #C";		
-		var text_8 = "^%?y-*y&k-* 8{{\" {q-/ .x-%||&}} 'k;5d!k-&q,y%%#|&pv~8hr5$(r$zt8h'5w(o{|0-u-*x}&y%~ s|$%8rvw#yx'C0at-*x}&p}y%j z~?y-&y{z#(u8h|%{8yrx%\"u{5%!k z0\"y-v0zu|!0yh|+%8yr.&yr-(u)x|y&{zv%~F&a}u8g#*x(x4)0'gzz0,zn(%,&%~%!&ZXSF&T%0-u-&q k-FHF";
-		var text_9 = "i!{)00*&):#{\"&#{#6+x&)u6{~z:w&:%&:w${y#H0o*&6.x&0|z:~&/yy 0w:~{20}(q '0|*|z #D:d~$$6! #~u)A$6)q$ 0 .00*&):~{3%6} z (&-t6{~z:s&)%w$~*:q%:u${y#:%~{%6(q0:r{:&* v,'0|*#64 ,-0% )+:qy/y-$%0H";
-		var text_10 = "j 'v0!~(yv$$(p$%%$q(/DJD40t}u0&lu3\"v$vv't$z  $y'/w $$r#$y0!j0-~'>1Ev(t$(rvt';1%vp|3)!&$$v&xv~u$%#/%s$e}3p t1vu(%$~1l !t?0Zj0-~'0 iuw/& 1{q'$v0%s}x/&y~i<3)!&1g ){u0&v*3#y \"ty\"v=0$iqwx w1e0u~!{=$! p+y k0$~!|=$u\"vrwv$y\"/t  zu&#r%zs~?/!#1w%t\"&0r$s){&>";
-		var text_11 = "Jr!|lw$r-\"\"uwu0yot,nwc\"&yd$7GDf\\X\"I\\GUQ^K07Z{gzk)v0+zk$r3qvk\"p *k\"gGVMIMG#||lv7l#t( qx0,u\"'vxp6";
+		var text_0 = "Welcome to Know Your Aliases!</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate, use their alias to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>jeff</strong> to decode the first fun-fact.";
+		var text_1 = "T&~h~&jolylk+h!'l&tvzyl'#nlu+O'~ly'8=&!llxz'zrk5";
+		var text_2 = "Xmo&ug(xj}z/O4lf!k/x*r%k&|o!i%sy/;4qnx{$k($8:&#kwssny=";
+		var text_3 = "Y-yvqv0ns'kx}rwzk\"u-~lc}=ytui+s|zyup0vs'Ml~{fkc+%ujhvp#--he y{l3\"oy jjvt {1'un#vu{/##vyppr<-uyqo&pypqy0ryj\"l%-yog+c#skc%0`hoqz|-tm\"O#nrh++(unsg+(|wrkyw-nu\"Mu{lhn!##1'Kytvf5\"3[nsucoq-nz\" xr%ygry|shn+|nsnwlwr%vh+[nwuc qxf'U q\"j'ky0Vskkl<-fuf+y\"%pu+}'%tq xrw'vz~tzl+9";
+		var text_4 = "\\+y!\"vxn+1,s\" wxz*\"l+1|o#+$r&}A";
+		var text_5 = "N*uu g7uk )re!uk\"ym\"!s*z*uv!uvr4oq'i*ru}k&l*p|jn$jxty|07N*uyuf7f* ylq*i*s${\"|f~v#p\"x%=@$$\"zmor(nd-wqr')c$txt4!k,m*n4yq-sn-$o\"}wo{wq\"}wsr()k&% {xnt76<-\"rp-yo!B";
+		var text_6 = "Oyxu4)tk 0\"r&6+Y4 qoo0wyms+8)vmE+S|ru*t$4~&*o#*x58+Yz1&y!0,rz~+%$1so 0(!yo+($$w*o #v,l%0\"v8*nxuz,s~0)yq*#q.1!y+w$?,Sy%u|q*t$4v%zz~y !sl|4&{*x*4%!|p$(1xo\"u!1mxo0u%,}z #1m}+Y4xq~+rutw*  4 {|xq!=,S+#yx~o 0u p*r 4w{|+y#&qx~u4){|v *&,2aywz{ ~0wz~mwu=";
+		var text_7 = "])*p0'jp)gw+ #)Xyy3euuuk#f:~0h~~yc3Qq!u}4/3 xy)\"$t o7()r}i{p$))m$o!p#wrk!n-+#uo~yf3#q)n|zc w0vxk(v|yw4jx4c xy{q~.\"J+}y}|y\"w} %)k#f3%u))S;xx+vyj|4h#}0,j~ytA+_v s$w'w*@)S4f|o~;}* p##0,qk)\"\\+$}pxyf3!!4oy'\"+su#)S4l)x!ym*$p3 xy)|uh(+s'#s#i3t~4ooutA";		
+		var text_8 = "]p)$+3u utn6&|ot4K)#z~g/)q)}!3mp.ct  z0/]) {1~c)umnz1|p/)jn6R(np#vry=3vwy\"P,}y\"~z\"V{*|e~@\"}~v3Ep'kkxvtp;4cwz1wq'#\"}~v3Ox(ur*%|r }\"{ (xt=";
+		var text_9 = "T/{ju4t}$}j'pt$wc)t~rjn4n~qvg'nxeuu4mtjxty+X$}w'yth)v,p{zn\".ppv|\"$ws2)R't}kug(7/Gxmy7/ewf4 wi)Pu xswc!+Trmq,xtr}\"zz\"$}jy+Pv}uB";
+		var text_10 = "G|tm&g#w-ut3tse r @i}q}rk(o|k-Qt#}.]|{x3Gzmnyk'4.X|&l|twwu2&'k|h-g&frogx&J`&#s-ij|k|i!&}|zv$\"nk3ssw!gmx&5H|tk:4";
 		
-		var cur_text_1 = "Gxq!t#zw* hgl*Rlz\"*Wdrt8/Wnm t# w /zotv/iovn/d&us lg  \"h&tsqugz$/znqmw#iwx$dov /d&jy n& o/eu r/kg os1& o o& rpw- * qk( wlto*'h- o/ju 8";
-		var cur_text_2 = "Xjz$ylq$i) k\"p)gq#i)mp5ljrf/$uevzv5$d+x) q+$!sp x)fg5ekpg5xx$w$pxgm5m $w$xrp\"*ln$v qn$k)$ mi x7$ %y)spxi)wc h) q+$!sw\"h)lc,i)gn qkif5xqi\"-e it5xx g($jx\"bijh\"eswhu5mo$ %y) g(i)e\"*inrc i 2\" x0w\"*mvi\"*s)kg*$#sw*loynC$Msp x) q(v#0\"/s $f%r0x\" e i\"*s)kq5xx$v i)xq&2";
-		var cur_text_3 = "bw)z3$kyj 'i5gu(w*&v%k#h 'iC&W+k,k3-q5z  \" g! \")z#+g5u\"8J% x+\"-n  j5o'8pz (8v%&Wy \"oz!v5J#'w*yA8V k3'g.z3 qyk+(ty& ,\"*nx8h x'-pvsx8q &(!g5vx+u%t3-jvz3 q#k'8v%&-(wC";
-		var cur_text_4 = " q jyw!n)%(jy /i f#)$%'e'g'%)r4vwj3q'ftwA\"dt hxgx\"$t3U*p#j(\" q k3e$w\"xx\"$hu%#h45\"i3u)ttj(\",jtwx\".q%w3v ttj'q\"g/n'\"(g$%(q4i %tv4:I:E04Ttlttxntx'\"$h/  c)\"wf$ryp#13 $w/r)u)\"un\"k(j/f\"f4ntf*g4d)%D3N3D&3G(uts(kun#%tty\"xs3v g/y&w#m/f\"f4  z&\"%c\"y\"g'u/  n!\"zs#y4vwj3pyz$%vqxg't&fB\"Xy:u4w %(q4  z3kz\")t)\",c y3v$\"#mtty\"$mx\"xq z(u4yxy \".q%w3rut$ A";
-		var cur_text_5 = "h  y$(u&\"y#p-23 u%'6p%t#ot$\"  )$ y&p)6@E F64/ &/)s3 9?4Y zj!gt/g+=4W)ozt4X=4E'q&u$)/glt rpB6X)+'&g ' px 3vgxx6u$v?&h%)6$uox&y \" /we'n&x#6ruwx&  *6'ur(&z 4+x%23 u%'6 y (&i x '$vw& x!#/\"ixz&)$,/ux378IGF=";
-		var cur_text_6 = "a  i)\"&/ij\"D/Sw-$pmw-*$vnr+;$kr+'in 6Dxq-w h)C+w$ \")ti !B/e r6#i r)pp) #pgn!6ry    xu'6#i $  k)s& h7-fxgt-& i7-  $ony$0)\" t$o## $wn$t$xs6 rn-&u$ u #i) #pgn!6xw)'&%v)  (x)p&si! )s2)f&%$vn0/ j +/xx-+pon-0 y -& h)   rn-.xxq-0 y7";
-		var cur_text_7 = "Wnz+uu#5J n3q x5I n3$%'zz y3y$4v5vo\"yq)+(n& yr'v(#43i * \"u&yy x5/x &0 y.*)i &u4)* i 0y#) mkA0gu*xq&#&%4 % &v  (*( i(y #C";
-		var cur_text_8 = " %?y-*y&k-* 8  \"  q-/ .x-%  &   'k;5d!k-&q,y%%# &pv 8hr5$(r$zt8h'5w(o  0-u-*x &y%  s $%8rvw#yx'C0at-*x &p y%j z ?y-&y z#(u8h % 8yrx%\"u 5%!k z0\"y-v0zu !0yh +%8yr.&yr-(u)x y& zv% F&a u8g#*x(x4)0'gzz0,zn(%,&% %!&ZXSF&T%0-u-&q k-FHF";
-		var cur_text_9 = "i! )00*&):# \"&# #6+x&)u6  z:w&:%&:w$ y#H0o*&6.x&0 z: &/yy 0w:  20 (q '0 * z #D:d $$6! # u)A$6)q$ 0 .00*&):  3%6  z (&-t6  z:s&)%w$ *:q%:u$ y#:%  %6(q0:r :&* v,'0 *#64 ,-0% )+:qy/y-$%0H";
-		var cur_text_10 = "j 'v0! (yv$$(p$%%$q(/DJD40t u0&lu3\"v$vv't$z  $y'/w $$r#$y0!j0- ' 1Ev(t$(rvt';1%vp 3)!&$$v&xv u$%#/%s$e 3p t1vu(%$ 1l !t?0Zj0- '0 iuw/& 1 q'$v0%s x/&y i 3)!&1g ) u0&v*3#y \"ty\"v=0$iqwx w1e0u ! =$! p+y k0$ ! =$u\"vrwv$y\"/t  zu&#r%zs ?/!#1w%t\"&0r$s) & ";
-		var cur_text_11 = "Jr! lw$r-\"\"uwu0yot,nwc\"&yd$7GDf X\"I GUQ K07Z gzk)v0+zk$r3qvk\"p *k\"gGVMIMG#  lv7l#t( qx0,u\"'vxp6";
+		var cur_text_1 = "T& h &jolylk+h!'l&tvzyl'#nlu+O' ly'8=&!llxz'zrk5";
+		var cur_text_2 = "Xmo&ug(xj z/O4lf!k/x*r%k& o!i%sy/;4qnx $k($8:&#kwssny=";
+		var cur_text_3 = "Y-yvqv0ns'kx rwzk\"u- lc =ytui+s zyup0vs'Ml  fkc+%ujhvp#--he y l3\"oy jjvt  1'un#vu /##vyppr -uyqo&pypqy0ryj\"l%-yog+c#skc%0 hoqz -tm\"O#nrh++(unsg+( wrkyw-nu\"Mu lhn!##1'Kytvf5\"3 nsucoq-nz\" xr%ygry shn+ nsnwlwr%vh+ nwuc qxf'U q\"j'ky0Vskkl -fuf+y\"%pu+ '%tq xrw'vz tzl+9";
+		var cur_text_4 = " +y!\"vxn+1,s\" wxz*\"l+1 o#+$r& A";
+		var cur_text_5 = "N*uu g7uk )re!uk\"ym\"!s*z*uv!uvr4oq'i*ru k&l*p jn$jxty 07N*uyuf7f* ylq*i*s$ \" f v#p\"x%=@$$\"zmor(nd-wqr')c$txt4!k,m*n4yq-sn-$o\" wo wq\" wsr()k&%  xnt76 -\"rp-yo!B";
+		var cur_text_6 = "Oyxu4)tk 0\"r&6+Y4 qoo0wyms+8)vmE+S ru*t$4 &*o#*x58+Yz1&y!0,rz +%$1so 0(!yo+($$w*o #v,l%0\"v8*nxuz,s 0)yq*#q.1!y+w$?,Sy%u q*t$4v%zz y !sl 4& *x*4%! p$(1xo\"u!1mxo0u%, z #1m +Y4xq +rutw*  4   xq!=,S+#yx o 0u p*r 4w  +y#&qx u4)  v *&,2aywz   0wz mwu=";
+		var cur_text_7 = " )*p0'jp)gw+ #)Xyy3euuuk#f: 0h  yc3Qq!u 4/3 xy)\"$t o7()r i p$))m$o!p#wrk!n-+#uo yf3#q)n zc w0vxk(v yw4jx4c xy q .\"J+ y  y\"w  %)k#f3%u))S;xx+vyj 4h# 0,j ytA+ v s$w'w*@)S4f o ; * p##0,qk)\" +$ pxyf3!!4oy'\"+su#)S4l)x!ym*$p3 xy) uh(+s'#s#i3t 4ooutA";
+		var cur_text_8 = " p)$+3u utn6& ot4K)#z g/)q) !3mp.ct  z0/ )  1 c)umnz1 p/)jn6R(np#vry=3vwy\"P, y\" z\"V * e @\"  v3Ep'kkxvtp;4cwz1wq'#\"  v3Ox(ur*% r  \"  (xt=";
+		var cur_text_9 = "T/ ju4t $ j'pt$wc)t rjn4n qvg'nxeuu4mtjxty+X$ w'yth)v,p zn\".ppv \"$ws2)R't kug(7/Gxmy7/ewf4 wi)Pu xswc!+Trmq,xtr \"zz\"$ jy+Pv uB";
+		var cur_text_10 = "G tm&g#w-ut3tse r @i q rk(o k-Qt# .   x3Gzmnyk'4.X &l twwu2&'k h-g&frogx&J &#s-ij k i!&  zv$\"nk3ssw!gmx&5H tk:4";
 	
 		function changeText(value) {
 			document.getElementById('clue'+xButton).setAttribute('style', 'background: #1e90ff');
@@ -173,7 +171,6 @@
 			if(value == "8"){document.getElementById("ptext").innerHTML = cur_text_8;}
 			if(value == "9"){document.getElementById("ptext").innerHTML = cur_text_9;}
 			if(value == "10"){document.getElementById("ptext").innerHTML = cur_text_10;}
-			if(value == "11"){document.getElementById("ptext").innerHTML = cur_text_11;}
 			xButton = value;
 		};	
 		
@@ -243,12 +240,11 @@
 			<button class="button" value = "7" id = "clue7" onclick="changeText(this.value);"/>Fact Seven</button> 
 			<button class="button" value = "8" id = "clue8" onclick="changeText(this.value);"/>Fact Eight</button>
 			<button class="button" value = "9" id = "clue9" onclick="changeText(this.value);"/>Fact Nine</button>
-			<button class="button" value = "10" id = "clue10" onclick="changeText(this.value);"/>Fact Ten</button> 
-			<button class="button" value = "11" id = "clue11" onclick="changeText(this.value);"/>Fact Eleven</button>
+			<button class="button" value = "10" id = "clue10" onclick="changeText(this.value);"/>Fact Ten</button>
 		<div>
 		<div style="margin: auto;width: 100%;">
 			<div id="textOutput">
-				<p class="pOutput" id="ptext">Welcome to Know Your Aliases!</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate, use their alias to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>BEGIN</strong> to decode the first fun-fact.</p>
+				<p class="pOutput" id="ptext">Welcome to Know Your Aliases!</br></br>Each fun-fact is about one of your team-mates and is initially encrypted. Once you know the correct team-mate, use their alias to unlock the next fun-fact.</br></br>To get you started, click on <strong>Fact One</strong> and enter the codeword <strong>jeff</strong> to decode the first fun-fact.</p>
 			</div>
 			<div style="width:100%;">
 				<form name="clue-form" onsubmit="return false">
